@@ -285,7 +285,7 @@ body {
         height: 8px;
         left: 98.4%;
         bottom: -3px;
-        background: url(..images/png/down-cir.png); }
+        background: url(../images/png/down-cir.png); }
       .reviews .article__scade::before {
         position: absolute;
         content: '';
@@ -500,7 +500,7 @@ body {
         opacity: 0; }
       .reviews .swiper-slide a::before {
         content: '';
-        background: url(../../../build/images/png/zoom-in.png);
+        background: url(../images/png/zoom-in.png);
         position: absolute;
         width: 53px;
         height: 55px;
@@ -625,7 +625,7 @@ body {
         opacity: 0; }
       .reviews .swiper-slide a::before {
         content: '';
-        background: url(../../../build/images/png/zoom-in.png);
+        background: url(../images/png/zoom-in.png);
         position: absolute;
         width: 53px;
         height: 55px;
@@ -755,7 +755,7 @@ body {
         opacity: 0; }
       .reviews .swiper-slide a::before {
         content: '';
-        background: url(../../../build/images/png/zoom-in.png);
+        background: url(../images/png/zoom-in.png);
         position: absolute;
         width: 53px;
         height: 55px;
@@ -862,7 +862,7 @@ body {
         opacity: 0; }
       .reviews .swiper-slide a::before {
         content: '';
-        background: url(../../../build/images/png/zoom-in.png);
+        background: url(../images/png/zoom-in.png);
         position: absolute;
         width: 53px;
         height: 55px;
@@ -950,7 +950,7 @@ body {
     opacity: 0; }
   .reviews .swiper-slide a::before {
     content: '';
-    background: url(../../../build/images/png/zoom-in.png);
+    background: url(../images/png/zoom-in.png);
     position: absolute;
     width: 53px;
     height: 55px;
@@ -1043,7 +1043,7 @@ body {
     opacity: 0; }
   .reviews .swiper-slide a::before {
     content: '';
-    background: url(../../../build/images/png/zoom-in.png);
+    background: url(../images/png/zoom-in.png);
     position: absolute;
     width: 53px;
     height: 55px;
