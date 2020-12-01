@@ -1,0 +1,40 @@
+.header {
+  padding: 10px 0;
+  width: 100%;
+  font-family: 'Montserrat';
+  
+}
+.nav {
+  &__item {
+    display: flex;
+    margin: 27px 0;
+    padding: 0;
+
+  }
+  &__link {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.88;
+    &:nth-child(1){
+       margin-right: 38px;
+       margin-left: 75px;
+    }
+    &:nth-child(2){
+       margin-right: 52px;
+    }
+    &:last-child{
+       margin-right: 0px;
+    }
+    & a {
+      color: #ffffff;
+      font-size: 16px;
+    }
+    svg {
+      margin-right: 10px;
+    }
+    .tel-svg {
+      margin-top: -4px;
+    }
+  }
+}
