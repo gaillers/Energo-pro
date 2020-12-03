@@ -275,6 +275,10 @@
           width: 15px;
         }
       }
+      .upload-file__option {
+        width: 83.2%;
+        top: 78px;
+      }
     }
   }
   .reviews {
@@ -372,6 +376,13 @@
     }
   }
 }
+@media (max-width: 484px) {
+  .upload-file__option {
+    .option-item {
+      margin-right: 10px;
+    }
+  }
+}
 @media (min-width: 576px) {
   .header {
     .col-md-10 {
@@ -441,7 +452,7 @@
   }
   .right-block {
     .form {
-      width: 375px;
+      width: 392px;
       margin-left: 0;
       padding: 30px 32px 30px;
       &__header {
@@ -461,6 +472,9 @@
           margin-right: 0;
           width: 25px;
         }
+      }
+      .upload-file__option {
+        top: 81px;
       }
     }
   }
@@ -614,6 +628,9 @@
           width: 15px;
         }
       }
+      .upload-file__option {
+        display: none;
+      }
     }
   }
   .reviews {
@@ -735,8 +752,8 @@
   }
   .right-block {
     .form {
-      width: 290px;
-      margin-left: 0;
+      width: 333px;
+      margin-left: -40px;
       &__header {
         font-size: 18px;
       }
@@ -746,6 +763,68 @@
           margin-left: 11px;
           margin-right: 0;
           width: 15px;
+        }
+      }
+      .upload-file__option {
+        display: flex;
+        left: 32px;
+        top: 81px;
+        width: 80.9%;
+        height: 55px;
+      }
+      .option-item {
+        &:nth-child(2) {
+          &::after {
+            opacity: 0;
+            content: '';
+            width: 8px;
+            height: 8px;
+            left: 66px;
+            top: 4px;
+            position: absolute;
+            background: url(../images/png/up-cir.png);
+          }
+          &::before {
+            opacity: 0;
+            content: '';
+            width: 8px;
+            height: 8px;
+            left: 177px;
+            top: 4px;
+            transform: rotate(90deg);
+            position: absolute;
+            background: url(../images/png/up-cir.png);
+          }
+        }
+        &:nth-child(3) {
+          &::after {
+            opacity: 0;
+            content: '';
+            width: 8px;
+            height: 8px;
+            left: 180px;
+            top: 4px;
+            position: absolute;
+            background: url(../images/png/up-cir.png);
+          }
+          &::before {
+            opacity: 0;
+            content: '';
+            width: 8px;
+            height: 8px;
+            left: 256px;
+            top: 4px;
+            transform: rotate(90deg);
+            position: absolute;
+            background: url(../images/png/up-cir.png);
+          }
+        }
+        margin-right: 10px;
+        input {
+          font-size: 10px;
+        }
+        &:last-child {
+          margin-right: 0px;
         }
       }
     }
@@ -885,6 +964,71 @@
           margin-left: 85px;
           margin-right: 0;
           width: 25px;
+        }
+      }
+      .upload-file__option {
+        left: 32px;
+        top: 109px;
+        width: 83.7%;
+        height: 55px;
+      }
+      .option-item {
+        width: 100%;
+        height: 100%;
+        margin-right: 30px;
+        cursor: pointer;
+        &:nth-child(2) {
+          &::after {
+            opacity: 0;
+            content: '';
+            width: 8px;
+            height: 8px;
+            left: 86px;
+            top: 4px;
+            position: absolute;
+            background: url(../images/png/up-cir.png);
+          }
+          &::before {
+            opacity: 0;
+            content: '';
+            width: 8px;
+            height: 8px;
+            left: 208px;
+            top: 4px;
+            transform: rotate(90deg);
+            position: absolute;
+            background: url(../images/png/up-cir.png);
+          }
+        }
+        &:nth-child(3) {
+          &::after {
+            opacity: 0;
+            content: '';
+            width: 8px;
+            height: 8px;
+            left: 230px;
+            top: 4px;
+            position: absolute;
+            background: url(../images/png/up-cir.png);
+          }
+          &::before {
+            opacity: 0;
+            content: '';
+            width: 8px;
+            height: 8px;
+            left: 317px;
+            top: 4px;
+            transform: rotate(90deg);
+            position: absolute;
+            background: url(../images/png/up-cir.png);
+          }
+        }
+        margin-right: 30px;
+        input {
+          font-size: 11px;
+        }
+        &:last-child {
+          margin-right: 0px;
         }
       }
     }

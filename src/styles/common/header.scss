@@ -36,5 +36,10 @@
     .tel-svg {
       margin-top: -4px;
     }
+    &:hover {
+      & a {
+        text-decoration: none;
+      }
+    }
   }
 }

@@ -1,5 +1,18 @@
 "use strict";
 
+/* Form  */
+function checkParams() {
+  var code = $('#code').val();
+  var name = $('#name').val();
+  var phone = $('#phone').val();
+
+  if (code.length != 5 && name.length != 0 && phone.length != 0) {
+    $('#submit').removeAttr('disabled');
+  } else {
+    $('#submit').attr('disabled', 'disabled');
+  }
+}
+
 var mainSwiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
   // spaceBetween: 32,

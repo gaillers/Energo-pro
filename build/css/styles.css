@@ -92,6 +92,8 @@ body {
     margin-right: 10px; }
   .nav__link .tel-svg {
     margin-top: -4px; }
+  .nav__link:hover a {
+    text-decoration: none; }
 
 .main-screen {
   width: 100%;
@@ -182,12 +184,13 @@ body {
     text-transform: uppercase;
     margin-bottom: 24px; }
   .right-block .form .upload-file__input {
-    opacity: 0;
     position: absolute;
     z-index: -1;
     overflow: hidden;
     width: 0.4px;
-    height: 0.4px; }
+    height: 0.4px;
+    top: 132px;
+    left: 209px; }
   .right-block .form .upload-file__label {
     font-family: 'Montserrat';
     position: relative;
@@ -198,10 +201,123 @@ body {
     border-radius: 5px;
     border: solid 1px #f1f1f1;
     background-color: #f5f5f5;
-    z-index: 0;
+    z-index: 3;
     font-size: 13px;
     color: #8f959c;
     cursor: pointer; }
+  .right-block .form .upload-file__option {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    left: 32px;
+    top: 109px;
+    width: 83.7%;
+    height: 55px;
+    padding: 0px 8px 0px;
+    margin: 0 1px 10px 0;
+    border-radius: 5px;
+    border: solid 1px #f1f1f1;
+    background-color: #f5f5f5;
+    z-index: 4; }
+  .right-block .form .option-item {
+    width: 100%;
+    height: 100%;
+    margin-right: 30px;
+    cursor: pointer; }
+    .right-block .form .option-item:last-child {
+      margin-right: 0px; }
+    .right-block .form .option-item:nth-child(1)::after {
+      opacity: 0;
+      content: '';
+      width: 8px;
+      height: 8px;
+      left: 0px;
+      top: 4px;
+      position: absolute;
+      background: url(../images/png/up-cir.png); }
+    .right-block .form .option-item:nth-child(1)::before {
+      opacity: 0;
+      content: '';
+      width: 8px;
+      height: 8px;
+      left: 63px;
+      top: 4px;
+      transform: rotate(90deg);
+      position: absolute;
+      background: url(../images/png/up-cir.png); }
+    .right-block .form .option-item:nth-child(2)::after {
+      opacity: 0;
+      content: '';
+      width: 8px;
+      height: 8px;
+      left: 86px;
+      top: 4px;
+      position: absolute;
+      background: url(../images/png/up-cir.png); }
+    .right-block .form .option-item:nth-child(2)::before {
+      opacity: 0;
+      content: '';
+      width: 8px;
+      height: 8px;
+      left: 208px;
+      top: 4px;
+      transform: rotate(90deg);
+      position: absolute;
+      background: url(../images/png/up-cir.png); }
+    .right-block .form .option-item:nth-child(3)::after {
+      opacity: 0;
+      content: '';
+      width: 8px;
+      height: 8px;
+      left: 230px;
+      top: 4px;
+      position: absolute;
+      background: url(../images/png/up-cir.png); }
+    .right-block .form .option-item:nth-child(3)::before {
+      opacity: 0;
+      content: '';
+      width: 8px;
+      height: 8px;
+      left: 317px;
+      top: 4px;
+      transform: rotate(90deg);
+      position: absolute;
+      background: url(../images/png/up-cir.png); }
+    .right-block .form .option-item:hover:nth-child(1)::after {
+      opacity: 1; }
+    .right-block .form .option-item:hover:nth-child(1)::before {
+      opacity: 1; }
+    .right-block .form .option-item:hover:nth-child(2)::after {
+      opacity: 1; }
+    .right-block .form .option-item:hover:nth-child(2)::before {
+      opacity: 1; }
+    .right-block .form .option-item:hover:nth-child(3)::after {
+      opacity: 1; }
+    .right-block .form .option-item:hover:nth-child(3)::before {
+      opacity: 1; }
+    .right-block .form .option-item:hover input {
+      color: #ff9311; }
+    .right-block .form .option-item:focus {
+      outline: none; }
+      .right-block .form .option-item:focus input {
+        color: #ff9311; }
+      .right-block .form .option-item:focus:nth-child(1)::after, .right-block .form .option-item:focus:nth-child(2)::after, .right-block .form .option-item:focus:nth-child(3)::after {
+        opacity: 1; }
+      .right-block .form .option-item:focus:nth-child(1)::before, .right-block .form .option-item:focus:nth-child(2)::before, .right-block .form .option-item:focus:nth-child(3)::before {
+        opacity: 1; }
+    .right-block .form .option-item input {
+      text-transform: uppercase;
+      font-size: 11px;
+      background: none;
+      border: none;
+      font-weight: 600;
+      padding: 0; }
+      .right-block .form .option-item input:nth-child(1) {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 14px;
+        top: 5px; }
   .right-block .form input {
     font-family: 'Montserrat';
     position: relative;
@@ -242,12 +358,19 @@ body {
     text-align: center;
     color: #ffffff;
     padding: 0 23px;
+    border: none;
     border-radius: 5px;
-    box-shadow: 0px 24px 29px 0 #df7a0057;
-    background-color: #ff9311;
+    background-color: #5f8cc7;
+    box-shadow: 0px 24px 29px 0 #5f8cc7;
     margin-top: 12px; }
     .right-block .form .btn:hover {
       color: #fff; }
+    .right-block .form .btn:disabled {
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 24px 29px 0 #df7a0057;
+      background-color: #ff9311;
+      opacity: 1; }
 
 /*Reviews*/
 .reviews {
@@ -595,6 +718,9 @@ body {
         margin-left: 11px;
         margin-right: 0;
         width: 15px; }
+    .right-block .form .upload-file__option {
+      width: 83.2%;
+      top: 78px; }
   .reviews {
     background-position-y: 200px;
     margin-bottom: 190px; }
@@ -669,6 +795,10 @@ body {
   .reviews .container-navigation {
     top: 64.5%; } }
 
+@media (max-width: 484px) {
+  .upload-file__option .option-item {
+    margin-right: 10px; } }
+
 @media (min-width: 576px) {
   .header .col-md-10 {
     margin: 0 auto;
@@ -712,7 +842,7 @@ body {
       width: 85%;
       display: none; }
   .right-block .form {
-    width: 375px;
+    width: 392px;
     margin-left: 0;
     padding: 30px 32px 30px; }
     .right-block .form__header {
@@ -727,6 +857,8 @@ body {
         margin-left: 85px;
         margin-right: 0;
         width: 25px; }
+    .right-block .form .upload-file__option {
+      top: 81px; }
   .reviews {
     background-position-y: 200px;
     margin-bottom: 190px; }
@@ -835,6 +967,8 @@ body {
       margin-left: 11px;
       margin-right: 0;
       width: 15px; }
+    .right-block .form .upload-file__option {
+      display: none; }
   .reviews {
     background-position-y: 170px;
     margin-bottom: 190px; }
@@ -920,8 +1054,8 @@ body {
     left: 82%;
     top: 125%; }
   .right-block .form {
-    width: 290px;
-    margin-left: 0; }
+    width: 333px;
+    margin-left: -40px; }
     .right-block .form__header {
       font-size: 18px; }
     .right-block .form label .upload {
@@ -929,6 +1063,56 @@ body {
       margin-left: 11px;
       margin-right: 0;
       width: 15px; }
+    .right-block .form .upload-file__option {
+      display: flex;
+      left: 32px;
+      top: 81px;
+      width: 80.9%;
+      height: 55px; }
+    .right-block .form .option-item {
+      margin-right: 10px; }
+      .right-block .form .option-item:nth-child(2)::after {
+        opacity: 0;
+        content: '';
+        width: 8px;
+        height: 8px;
+        left: 66px;
+        top: 4px;
+        position: absolute;
+        background: url(../images/png/up-cir.png); }
+      .right-block .form .option-item:nth-child(2)::before {
+        opacity: 0;
+        content: '';
+        width: 8px;
+        height: 8px;
+        left: 177px;
+        top: 4px;
+        transform: rotate(90deg);
+        position: absolute;
+        background: url(../images/png/up-cir.png); }
+      .right-block .form .option-item:nth-child(3)::after {
+        opacity: 0;
+        content: '';
+        width: 8px;
+        height: 8px;
+        left: 180px;
+        top: 4px;
+        position: absolute;
+        background: url(../images/png/up-cir.png); }
+      .right-block .form .option-item:nth-child(3)::before {
+        opacity: 0;
+        content: '';
+        width: 8px;
+        height: 8px;
+        left: 256px;
+        top: 4px;
+        transform: rotate(90deg);
+        position: absolute;
+        background: url(../images/png/up-cir.png); }
+      .right-block .form .option-item input {
+        font-size: 10px; }
+      .right-block .form .option-item:last-child {
+        margin-right: 0px; }
   .reviews .article {
     font-size: 34px;
     margin-bottom: 77px; }
@@ -1021,6 +1205,59 @@ body {
       margin-left: 85px;
       margin-right: 0;
       width: 25px; }
+    .right-block .form .upload-file__option {
+      left: 32px;
+      top: 109px;
+      width: 83.7%;
+      height: 55px; }
+    .right-block .form .option-item {
+      width: 100%;
+      height: 100%;
+      margin-right: 30px;
+      cursor: pointer;
+      margin-right: 30px; }
+      .right-block .form .option-item:nth-child(2)::after {
+        opacity: 0;
+        content: '';
+        width: 8px;
+        height: 8px;
+        left: 86px;
+        top: 4px;
+        position: absolute;
+        background: url(../images/png/up-cir.png); }
+      .right-block .form .option-item:nth-child(2)::before {
+        opacity: 0;
+        content: '';
+        width: 8px;
+        height: 8px;
+        left: 208px;
+        top: 4px;
+        transform: rotate(90deg);
+        position: absolute;
+        background: url(../images/png/up-cir.png); }
+      .right-block .form .option-item:nth-child(3)::after {
+        opacity: 0;
+        content: '';
+        width: 8px;
+        height: 8px;
+        left: 230px;
+        top: 4px;
+        position: absolute;
+        background: url(../images/png/up-cir.png); }
+      .right-block .form .option-item:nth-child(3)::before {
+        opacity: 0;
+        content: '';
+        width: 8px;
+        height: 8px;
+        left: 317px;
+        top: 4px;
+        transform: rotate(90deg);
+        position: absolute;
+        background: url(../images/png/up-cir.png); }
+      .right-block .form .option-item input {
+        font-size: 11px; }
+      .right-block .form .option-item:last-child {
+        margin-right: 0px; }
   .reviews .container {
     max-width: 1150px;
     padding-right: 0px; }
