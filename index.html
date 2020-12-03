@@ -92,7 +92,7 @@
                 <div class="right-block">
                     <form class="form" id="form-control" method="post" action="">
                        <p class="form__header">Подобрать фильтр</p>
-                       <label class="upload-file__label" for="file">
+                       <label class="upload-file__label" id="upload" for="file">
                         <svg class="camera" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="10" viewBox="0 0 12 10">
                             <image id="icons8-camera" width="12" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAYAAACALL/6AAAA8klEQVQYlV3QvyvFYRQG8M9FUaRuRBYDpWyKweSqu9zZKnZ/AqtFFn/C3RjEYiCRexcDKfwLFoVBIeXH1eF86+apt97nPec553mfUqvVcnTaHMcUGrVq5enotNnEnD98Y7NWrawGKx2eNGZwmcUX3GEy+SMG836Degg+sRNiLGZxH+cYwAOW04EudGIEvdm8hwNsoYyrsIQNjHbgGVXMIrZdZEM5B0xjCcdBQhCnwBf6MNT2FhjGRyEI7wW6M5X6P8EuJoo/xMR2rGA9ExpLi/1p+zfWM8z/EwVu8ZaiwuJrbFjAWkZYoCeTC8vXuMc7tn8Ai1Y4bGaRsJoAAAAASUVORK5CYII="/>
                           </svg> Фото компрессора
@@ -100,7 +100,6 @@
                             <image id="icons8-upload_to_cloud" width="25" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAUCAYAAAB4d5a9AAABvklEQVQ4ja2VT0hVQRTGf4qIJIakoaKIKyFqqyBBsxiQUVBJIxSKNrkpENvopl3QIlq5EPGtBAVBUSLBWTTgmKuWIS4Ug0KLSMhFJLh5cWSePC6+7tzs2wwz93znu2fOnynL5/PEwjp/FRgGbgPNwHdgC1g0Wv0s5SZaxDo/AkwB9Rd8FoFnRqu5fxaxzj8GchH/8tRoNR0lYp1/AnQA+8BH4E2EQAHtRqu94oOKhPNK4D3QmcFpEi9C3s5RnjCYvKSAoDt5cH5d1vkG4APQekkRwRWj1UlhUx4EBsL9/w8BwZZ1fqywKVt/t3ED2Mng4BSojLRdN1r1SiSvMgi8Ba4Dq5H2Pdb5CRG5E0lYMVr1AydGq0FgKZI3LiJVEYY5o9WQdV6ivmedf220ug/MRHAbJSfbwM0Uw3mgBpACaQK+has7Bh6mcH9IM74EFlIMH4T1EyA1vwv0RUQhyJ31iXV+FhiNIByH6fsFqIuwl77rKm7GR4AMwltS2iVIh8BdYDmlp76GQnnORQPSOl/9F5EWYC3k5nMpBaPVr+J91kerFjgA2oxWR7G85IBMg+RBIr2WhZRV5DewGdY4AH8ASTmH1hWn+l0AAAAASUVORK5CYII="/>
                          </svg>
                        </label>
-
                        <div class="upload-file__option" id="option">
                         <div tabindex="1" class="option-item">
                          <input type="button" value="по коду">
@@ -113,7 +112,7 @@
                         </div>
                       </div>
 
-                       <input accept=".jpg, .jpeg, .png" type="file" name="file" id="file" class="upload-file__input" required>
+                       <input onchange="file_selected = true;" accept=".jpg, .jpeg, .png" type="file" name="file" id="file" class="upload-file__input" required>
                        
                        <label for="code">
                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="13" viewBox="0 0 13 13">
@@ -134,9 +133,9 @@
                             <image id="call-answer" width="12" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAA1ElEQVQokYXRvS5EQRjG8d9KNBqVZiU0ClSavQAJkUnkNEfLBSjdhu0UKndgEpmsnahwAxq1RuMOFBoyclaODec8zTvPm/nn/RrElIe4xRuO6iq869ACzrGDgElMeakP2G/5XYz7gMFc7rkPeGr5SV2Fyz6g/eEgprzdCdRVuMG08Yu4jimvdFUoOsFL897CY0y5RDHl45jyxWx7PwPHlDfwgNUm9YFUbtP4exz+2lBMeQ132Pyno+mspW/VVXjFCFf4/ANYn79Bu1q5/in2sFzmwtkXBAs0nfpJiAsAAAAASUVORK5CYII="/>
                         </svg> 
                        </label>
-                       <input onkeyup='checkParams()' placeholder="Телефон для связи" inputmode="tel" autocomplete="tel" type="phone" id="phone" maxlength="13" required>
+                       <input onkeyup='checkParams()' placeholder="Телефон для связи" inputmode="tel" autocomplete="tel" type="phone" id="phone" maxlength="20" required>
 
-                       <input class="btn" id="submit" type="submit" name="submit" disabled>
+                       <input onclick='showNoFile();'  class="btn" id="submit" type="submit" name="submit" disabled>
                     </form>
                 </div>
                </div>
