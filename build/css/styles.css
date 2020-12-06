@@ -206,7 +206,6 @@ body {
     color: #8f959c;
     cursor: pointer; }
   .right-block .form .upload-file__option {
-    visibility: hidden;
     display: flex;
     position: absolute;
     left: 32px;
@@ -719,6 +718,8 @@ body {
         margin-right: 0;
         width: 15px; }
     .right-block .form .upload-file__option {
+      display: flex;
+      display: none;
       width: 83.2%;
       top: 78px; }
   .reviews {
@@ -858,7 +859,9 @@ body {
         margin-right: 0;
         width: 25px; }
     .right-block .form .upload-file__option {
-      top: 81px; }
+      top: 81px;
+      display: flex;
+      display: none; }
   .reviews {
     background-position-y: 200px;
     margin-bottom: 190px; }
@@ -968,6 +971,7 @@ body {
       margin-right: 0;
       width: 15px; }
     .right-block .form .upload-file__option {
+      display: flex;
       display: none; }
   .reviews {
     background-position-y: 170px;
@@ -1065,6 +1069,7 @@ body {
       width: 15px; }
     .right-block .form .upload-file__option {
       display: flex;
+      display: none;
       left: 32px;
       top: 81px;
       width: 80.9%;
@@ -1206,6 +1211,8 @@ body {
       margin-right: 0;
       width: 25px; }
     .right-block .form .upload-file__option {
+      display: flex;
+      display: none;
       left: 32px;
       top: 109px;
       width: 83.7%;

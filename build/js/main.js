@@ -6,12 +6,12 @@ function checkParams() {
   var name = $('#name').val();
   var phone = $('#phone').val();
 
-  if (code.length != 5 && name.length != 0 && phone.length != 0 && file.length != 1) {
+  if (code.length != 5 && name.length != 0 && phone.length != 0) {
     $('#submit').removeAttr('disabled');
   } else {
     $('#submit').attr('disabled', 'disabled');
   }
-} // проверка файла
+} // проверка загрузки файла
 
 
 function showNoFile() {
@@ -26,8 +26,10 @@ document.getElementById('file').addEventListener('change', function () {
   if (this.value) {
     console.log('Выбран файл!');
     console.log(this.value);
+    document.getElementById('option').style.display = 'flex';
   } else {
     console.log('Файл не выбран');
+    document.getElementById('option').style.display = 'block';
   }
 });
 var mainSwiper = new Swiper('.swiper-container', {

@@ -129,7 +129,6 @@
       cursor: pointer;
     }
     .upload-file__option {
-      visibility: hidden;
       display: flex;
       position: absolute;
       left: 32px;
@@ -148,7 +147,7 @@
       height: 100%;
       margin-right: 30px;
       cursor: pointer;
-      &:last-child{
+      &:last-child {
         margin-right: 0px;
       }
       &:nth-child(1) {
@@ -315,7 +314,7 @@
         fill: black;
       }
       &:hover {
-        color: #ff9311
+        color: #ff9311;
       }
     }
     .btn {

@@ -276,6 +276,8 @@
         }
       }
       .upload-file__option {
+        display: flex;
+        display: none;
         width: 83.2%;
         top: 78px;
       }
@@ -475,6 +477,8 @@
       }
       .upload-file__option {
         top: 81px;
+        display: flex;
+        display: none;
       }
     }
   }
@@ -629,6 +633,7 @@
         }
       }
       .upload-file__option {
+        display: flex;
         display: none;
       }
     }
@@ -767,6 +772,7 @@
       }
       .upload-file__option {
         display: flex;
+        display: none;
         left: 32px;
         top: 81px;
         width: 80.9%;
@@ -967,6 +973,8 @@
         }
       }
       .upload-file__option {
+        display: flex;
+        display: none;
         left: 32px;
         top: 109px;
         width: 83.7%;
